@@ -1,0 +1,36 @@
+.externals{
+	margin: 20px 28px;
+	display: block;
+}
+.externals span{
+	border: 1px solid black; padding: 15px 20px; border-radius: 4px;
+	cursor: pointer;
+	color: white;
+
+	background-color: #459fd3;
+	border-color: #357ebd;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.externals span:hover{
+	background: #57AADA;
+	border-color: #5D8EB9;
+}
+.externals span a{
+	text-decoration: none;
+	text-shadow: none;
+	color: white;
+	font-weight: bold;
+}
+
+.fa-vert-mid{
+	vertical-align: middle;
+}
+
+
+.crafty-footer{
+	position: fixed;
+	bottom: 0px;
+	color: white;
+	padding: 10px;
+}

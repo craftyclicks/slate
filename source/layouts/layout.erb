@@ -23,6 +23,7 @@ under the License.
     <title><%= current_page.data.title || "API Documentation" %></title>
 
     <%= stylesheet_link_tag :screen, media: :screen %>
+    <%= stylesheet_link_tag :fontawesome, media: :screen %>
     <%= stylesheet_link_tag :print, media: :print %>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <% if current_page.data.search %>
@@ -48,7 +49,7 @@ under the License.
       </span>
     </a>
     <div class="tocify-wrapper">
-      <%= image_tag "logo.png" %>
+      <a href="https://craftyclicks.co.uk"><%= image_tag "logo.png" %></a>
       <% if language_tabs %>
         <div class="lang-selector">
           <% language_tabs.each do |lang| %>
@@ -83,6 +84,7 @@ under the License.
         <% current_page.data.includes && current_page.data.includes.each do |include| %>
           <%= partial "includes/#{include}" %>
         <% end %>
+		<div><a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a></div>
       </div>
       <div class="dark-box">
         <% if language_tabs %>
